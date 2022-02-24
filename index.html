@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<!--this page created by @adembakis-->
+<html lang="tr-TR">
+
+  <head>
+    <meta http-equiv="refresh" content="1000">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3schools</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css"> <!--olduğu yerden çağır-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> tam erişim yolu-->
+    <!--<link rel="stylesheet" href="/html/style.css"> bulunduğu yerden klasörün içine gir-->
+    <!--<link rel="stylesheet" href="../html/styles.css"> bir üst dizindeki klasörün içine gir-->
+  </head>
+
+<body id="body" onload="myLoad()">
+
+  <script type="text/javascript">
+    function myLoad(){
+      
+    }
+</script>
+
+  <h1 id="h1_w3school">w3school</h1>
+
+  <nav id="nav_style">
+    <a href="#body">HTML</a>
+    <a href="#body">CSS</a>
+    <a href="#body">JavaScript</a>
+    <a href="#body">jQuery</a>
+  </nav>
+
+  <!--SAĞ-YAN-ASİDE-->
+  <div class="sag_yan_aside">
+    <aside>
+      <h4>Aside Float Right</h4>
+      <a href="#body">Aside-1</a><br>
+      <a href="#body">Aside-2</a><br>
+      <a href="#body">Aside-3</a><br>
+      <a href="#body">Aside-4</a><br>
+    </aside>
+  </div>
+
+    <!--GOOGLE -->
+    <div id="google">
+      <span style='color: #4285f4; font-size: 50px;'>G</span>
+      <span style='color: #ea4335; font-size: 50px;'>O</span>
+      <span style='color: #fbbc05; font-size: 50px;'>O</span>
+      <span style='color: #4285f4; font-size: 50px;'>G</span>
+      <span style='color: #34a853; font-size: 50px;'>L</span>
+      <span style='color: #ea4335; font-size: 50px;'>E</span><br>
+      <input type="text" id="googleAramaKutusu" placeholder="Arama" ><br>
+    </div>
+
+  <!--TÜM BEYAZ ALAN-->
+  <section id="ic_bolum">
+
+    <!--JavaScript-->
+    <div id="java_bolum">
+      <img src="images/js-logo.png" alt="JavaScript" style="max-width: 100%; height: auto;">
+    </div>
+
+    <!--IFRAME
+    <div id="spotify">
+      <iframe id="iframe_spotify" src="http://mkdcelikmetal.com/" title="W3Schools Free Online Web Tutorials">
+      </iframe>
+    </div>
+    -->
+
+    <!--FORM-->
+    <section id="forms">
+      <form action="/bootstrap.html" target="_blank" method="get" autocomplete="on" validate id="form1">  
+        <!-- 1 -->
+        <fieldset class="fieldset_kucuk_form">
+          <legend class="legend_baslik">1. Alan</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><hr>
+        </fieldset>
+        <!-- 2 -->
+        <fieldset class="fieldset_kucuk_form">
+          <legend class="legend_baslik">2</legend>
+          <p>Chosee your favorite Web language:</p>
+          <input class="radio_butonlari" type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">HTML</label><br>
+          <input class="radio_butonlari" type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">CSS</label><br>
+          <input class="radio_butonlari" type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label><hr>
+        </fieldset>
+        <!-- 3 -->
+        <fieldset class="fieldset_kucuk_form">
+          <legend class="legend_baslik">3</legend>
+          <p>Which one do you have?:</p>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1">I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2">I have a car</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3">I have a boat</label><hr>
+        </fieldset>
+        <!-- 4 -->
+        <fieldset class="fieldset_kucuk_form">
+          <legend class="legend_baslik">4</legend>
+          <label for="favcolor">Color </label>
+          <input type="color" id="favcolor" name="favcolor"><hr>
+          <label>Buton </label>
+          <input type="button" value="boş buton"><hr>
+          <textarea id="text_area" name="message">Text Area</textarea><hr>
+          <label for="cars">Choose a car:</label>
+        </fieldset>
+        <!-- 5 -->
+        <fieldset class="fieldset_kucuk_form">
+          <legend class="legend_baslik">5</legend>
+          <select id="cars" name="cars" size="2" multiple> <!--Görünür Liste-->
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="Audi" selected>Audi</option>
+          </select><hr>
+
+          <input type="button" onclick="alert('Hello World!')" value="Click Me!"><hr>
+        </fieldset>
+        <!-- 6 -->
+        <fieldset class="fieldset_kucuk_form" oninput="total.value=parseInt(a.value)+parseInt(b.value)">
+        <legend class="legend_baslik">6</legend>
+        <label for="aylar">Aylar</label>
+          <input list="browsers" name="datalist"><hr>
+
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+
+          <datalist id="arabalar">
+            <option value="BMW">
+            <option value="Fiat">
+            <option value="Mercedes-Benz">
+            <option value="audi">
+            <option value="Volvo">
+            <option value="Vw">
+          </datalist>
+
+          <datalist id="aylar">
+            <option value="ocak">
+            <option value="şubat">
+            <option value="mart">
+            <option value="nisan">
+            <option value="mayıs">
+          </datalist>
+          
+          0<input type="range" id="a" name="a" value="50">100 +
+          <input type="number" id="b" name="b" value="50"> total=
+
+          (<output name="total" for="a b"></output>)
+          <hr>on
+          <label for="lpassword">Password</label>
+          <input type="password" id="lpassword" name=""><hr>
+
+          <label for="datemax">enter a date before 1980-01-01:</label>
+          <input type="date" id="datemax" name="datemax" max="1979-12-31"><hr>
+
+          <label for="mindate">enter a date after 2000-01-01:</label>
+          <input type="date" id="mindate" name="mindate" min="2000-01-01"><hr>
+
+          <label for="birthday">birthday</label>
+          <input type="datetime-local" id="birthday" name="birthday"><hr>
+        </fieldset>
+        <!-- 7 -->
+        <fieldset class="fieldset_kucuk_form" oninput="toplam.value=parseInt(onluk.value)">
+        <legend class="legend_baslik">7</legend>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email"><hr>
+        <label for="file">File</label>
+        <input type="file" id="file" name="file"><hr>
+        <!--saklı oalrak formdan ilgili dosyaya gider-->
+        <input type="hidden" id="gizli" name="gizli" value="Gizli - Hidden">
+        <label for="ay">Ay</label>
+        <input type="month" id="month" name="month"><hr>
+        <label for="sayi">1-50 arasında 3êr arttırarak sayı girin</label>
+        <input type="number" id="sayi" name="sayi" min="3" step="3" max="52" value="3"><hr>
+        <!--10nar arttır sayıları-->
+        <label for="10nar">10nar</label>
+        <input type="number" id="10nar" name="10nar" min="0" max="100" step="10" value="30"><hr>
+        <!--onar range-->
+        <input type="range" id="onluk" name="onar" min="0" step="5" max="500"><br>
+        range=(<output name="toplam" for=""></output>)<hr>
+
+        <label for="arama">Arama</label>
+        <input type="search" id="arama" name="arama"><hr>
+
+        <label for="phone">Tel</label>
+        <input type="tel" id="phone" name="phone" maxlength="11" placeholder="Örn:544 532 55 66" title="Örn: 0534-577-69-80" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"><hr>
+
+        <label for="zaman">Zaman</label>
+        <input type="date" id="zaman" name="zaman" value="01-01-2022"><hr>
+
+        <label for="url">URL</label>
+        <input type="url" id="url" name="url"><hr>
+
+        <label for="salt">Normal değeri <ins>düzenlenmeyip</ins> gönderilen form verileri</label>
+        <input type="text" id="salt" name="salt" value="Joe" readonly style="background-color: rgba(128, 128, 128, 0.205);"><br>
+        <label for="nosalt">Normal değeri <ins>düzenlenip</ins> gönderilen form verileri</label>
+        <input type="text" id="nosalt" name="nosalt" value="Doe" size="20" maxlength="15"><hr>
+
+        <label for="disabled">(disabled) değeri <mark>gönderilmeyen</mark> form verileri (sadece ekrana bastırır)</label>
+        <input type="text" id="disabled" name="disabled" value="Joe" disabled><hr>
+
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple><hr>
+
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="3 harfli ülke kodu giriniz"><hr>
+
+        <label for="required">zorunlu doldurulması gereken alan (required)</label>
+        <input type="text" id="required" name="required" required pattern="[0-9]{3}" title="3 haneli rakam giriniz sadece"><hr>
+
+        <label for="auto_focus">Sayfa yüklendiğinde otomatik odaklanan buraya gelir <br><em>(--- autofocus niteliği eklendiği için ---)</em><br></label>
+        <input type="text" id="auto_focus" name="auto_focus" autofocus placeholder="Değer girmeden dewam etmeyiniz" required autocomplete="off">
+        </fieldset>
+      
+        <!--FORM RESET and SUBMIT-->
+        <fieldset class="fieldset_kucuk_form">
+          <legend class="legend_baslik">SON</legend>
+          <input type="reset" value="sıfırla" style="font-size: 20px;">
+          <input type="submit" value="gönder" style="font-size: 20px;">
+        </fieldset>
+        
+        <fieldset class="fieldset_kucuk_form">
+          <legend class="legend_baslik">formaction</legend>
+          <label for="fn">Ad</label>
+          <input type="text" required placeholder="isim"><hr>
+          <input type="button" value="formaction /bootstrap2.html">
+        </fieldset>
+      </form>
+
+      <!--input değeri formun dışında değer ama FORMA BAĞLI-->
+      <input type="text" id="text1" name="T_E_X_T_1" form="form1">
+
+    </section><br>
+
+    <input type="text" id="text2" name="T_E_X_T_2" form="form1">
+
+    <section id="bolum_section">
+      <div id="icons">
+        <img class="resim" src="images/icons/add-to-favorites.png">
+        <img class="resim" src="images/icons/add.png">
+        <img class="resim" src="images/icons/done.png">
+        <img class="resim" src="images/icons/download.png">
+        <img class="resim" src="images/icons/add-to-favorites.png">
+        <img class="resim" src="images/icons/add.png">
+        <img class="resim" src="images/icons/done.png">
+        <img class="resim" src="images/icons/download.png">
+      </div>
+
+      <!--JavaScript Nedir ?-->
+      <div id="jsDiv">
+        <br>
+        <p id="jsBaslik">JavaScript Nedir?</p>
+          <p id="jsAciklama">JavaScript, dinamik web sayfası içeriği oluşturmak için bir betik dilidir. 
+            Açılır menüler, hareketli grafikler ve dinamik arka plan renkleri gibi site 
+            ziyaretçilerinin web sayfalarıyla etkileşimini geliştirmek için öğeler oluşturur.</p>
+      </div>
+    </section>
+
+    <!-- Chapter-->
+    <div id="href"></div>
+
+    <section class="chapter_bg"></section>
+      <div id="chapter_text">
+        <span id="C10" class="basliklar" ><a href="#href"> Chapter 0 (Bölüm 0) ✅</a><img src="images/icons/add-to-favorites.png" alt="gmail" style="float: right;"></span><hr>
+        <span id="C11" class="basliklar" ><a href="#href"> Chapter 1 (Bölüm 1) 🎵</a><img src="images/icons/add.png" alt="gmail" style="float: right;"></span><hr>
+        <span id="C22" class="basliklar" ><a href="#href"> Chapter 2 (Bölüm 2) ➕</a><img src="images/icons/done.png" alt="gmail" style="float: right;"></span><hr>
+        <span id="C33" class="basliklar" ><a href="#href"> Chapter 3 (Bölüm 3) ➖</a><img src="images/icons/download.png" alt="gmail" style="float: right;"></span><hr>
+        <span id="C44" class="basliklar" ><a href="#href"> Chapter 4 (Bölüm 4) 🌳</a><img src="images/icons/face-id.png" alt="gmail" style="float: right;"></span><hr>
+        <span id="C55" class="basliklar" ><a href="#href"> Chapter 5 (Bölüm 5) ➿</a><img src="images/icons/increase.png" alt="gmail" style="float: right;"></span><hr>
+        <span id="C66" class="basliklar" ><a href="#href"> Chapter 6 (Bölüm 6) 🌷</a><img src="images/icons/tune.png" alt="gmail" style="float: right;"></span><hr>
+        <div><button id="butonum"><a  id="click" href="#href" target="_self">Complete</a></button></div>
+      </div>
+
+    <section id="makaleler">
+      <article>
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, 
+          released in 2008. Chrome is the world's most popular 
+          web browser today!</p>
+      </article>
+      <article>
+        <h1>WWF's Panda symbol</h1>
+          <p>The Panda has become the symbol of WWF. The well-known 
+            panda logo of WWF originated from a panda named Chi Chi 
+            that was transferred from the Beijing Zoo to the London 
+            Zoo in the same year of the establishment of WWF.
+          </p>
+      </article>
+    </section>
+    
+    <section id="hamburger_ceper">
+      <div id="container_dis">
+        <div class="H_container">
+          <h1>Cupon</h1>
+        </div>
+        <img style="width: 100%" src="images/background.png" alt="hamburger">
+        <div class="H_container" style="background-color: white;">
+          <h1><b>ALIŞVERİŞİNİZDE %20 İNDİRİM</b></h1>
+          <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur. 
+            Sea te minim soat senserit, ex quo luptatum tacimates 
+            voluptatum, salutandi delicatissimi eam ea. sed nullam 
+            labamus appellantur'da, mei ei omnis dolorem mnesarchum.
+          </p>
+        </div>
+        <div class="H_container ">
+          <p>Promosyon Kodunu Kullan: <span id="promo">BOH232</span></p>
+          <p id="expire">Bitiş: 03 Oca 2021</p>
+        </div>
+      </div>
+    </section>
+
+    <figure>
+      <section id="hesapmakinesi">
+      <!--Hesap Makinesi -->
+        <div id="hesapDiv">
+          <div id="caption_baslik">Hesap Makinesi</div>
+          <table>
+            <tr class="trButon">
+              <td id="tdSonuc" colspan="3">0</td>
+            </tr>
+            <tr class="trButon">
+              <td class="tdButon">7</td>
+              <td class="tdButon">8</td>
+              <td class="tdButon">9</td>
+            </tr>
+            <tr class="trButon">
+              <td class="tdButon">4</td>
+              <td class="tdButon">5</td>
+              <td class="tdButon">6</td>
+            </tr>
+            <tr class="trButon">
+              <td class="tdButon">1</td>
+              <td class="tdButon">2</td>
+              <td class="tdButon">3</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <figcaption>Fig1. - Trulli, Puglia Italy.</figcaption>
+      html tagları &lt; işaretler &gt; arasına yazılmalıdır."" âã
+      <p>I will display ©</p>
+      <p>I will display ∑</p>
+      <p>I will display ∋ </p>
+      <p>I will display ♣ </p>
+      <p style="font-size: 2vw;">↔ yazdıktan sonra ↲</p>
+      <p style="font-size: 3vw;">☝ ☙ ☕ ☔ ☢ ⇎ ☎ ♚ ⚓ ⚡ ⚾ ⛅ ⛍ ⛳ ⛺ ⛽ ✅</p>
+    </figure>
+
+      <!--Country-Contact-->
+      <table id="countryContact">
+        <caption>Country-Contact</caption>
+        <tr><!--Satır atlar-->
+          <th>Sıra</th>
+          <th>Company</th><!--Başlık-->
+          <th>Contact</th>
+          <th>Country</th>
+          <td colspan="4">birleşik hücreler<br><hr></td>
+        </tr>
+
+        <tr>
+          <th>1</th>
+          <td>Alfreds Futterkiste</td><!--Veri-->
+          <td>Maria Anders</td>
+          <td>Germany</td>
+          <td>,</td>
+          <td>,</td>
+          <td>,</td>
+          <td>,</td>
+        </tr>
+
+        <tr>
+          <th>2</th>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+          <td>,</td>
+          <td>,</td>
+        </tr>
+
+        <tr>
+          <th>3</th>
+          <th>Firma<br><hr><img src="images/company.png" alt="Company" style="width: 30px; height: 30px;"></th>
+          <th>Bağlantı<br><hr><img src="images/contact.png" alt="Contact" style="width: 30px; height: 30px;"></th>
+          <th>Ülke<br><hr><img src="images/country.png" alt="Country" style="width: 30px; height: 30px;"></th>
+          <th>,</th>
+          <th>,</th>
+        </tr>
+
+        <tr>
+          <th>4</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th>5</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th>6</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <div class="city main">
+          <h2 class="country">London</h2>
+          <p>London is the capital of <span class="note">England</span></p>
+      </div>
+
+      <button onclick="myFunction1()">Hide Elements</button>
+
+      <script>
+        function myFunction1() {
+          var x = document.getElementsByClassName("city");
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+        }
+        </script>
+
+      <div class="city">
+          <h2 class="country">Paris</h2>
+          <p>Paris is the capital of <span class="note">France</span>.</p>
+      </div>
+
+      <div class="city">
+          <h2 class="country">Tokyo</h2>
+          <p class="main">Tokyo is the capital of <span class="note">Japan</span></p>
+      </div>
+
+      <div id="myDiv1">
+          Hi !
+      </div>
+
+      <div id="myDiv2">
+          Div 2
+      </div>
+      
+      <div id="myDiv3">
+          Div 3
+      </div>
+
+      <table style="background-color: rgba(0, 0, 0, 0.4);">
+        <colgroup>
+          <col span="2" style="background-color: white;">
+          <col span="3" style="background-color: pink;">
+          <col span="1">
+          <col span="1" style="background-color: cornflowerblue;">
+        </colgroup>
+        <tr>
+          <th>MON</th>
+          <th>TUE</th>
+          <th>WED</th>
+          <th>THU</th>
+          <th>FRI</th>
+          <th>SAT</th>
+          <th>SUN</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td style="visibility: collapse;">28</td>
+        </tr>
+      </table>
+
+      <div>
+        <table style="width: -webkit-fill-available;">
+          <tr>
+            <td>
+              <ul style="list-style-type: circle;">
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+              </ul>
+            </td>
+            <td>
+              <ul style="list-style-type: disc;">
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+              </ul>
+            </td>
+            <td>
+              <ul style="list-style-type: square;">
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+              </ul>
+            </td>
+            <td>
+              <ul style="list-style-type: none;"><!--Liste öğesi işaretçisi-->
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+                <li>Sırasız *</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ol>
+                <li>Sıralı *</li>
+                <li>Sıralı *</li>
+                <li>Sıralı *</li>
+                <li>Sıralı *</li>
+              </ol>
+            </td>
+            <td>
+              <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                  <ul>
+                    <li>Black Tea</li>
+                    <li>Green Tea</li>
+                  </ul>
+              </ul>
+            </td>
+            <td>
+              <ol type="A">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ol>
+            </td>
+            <td>
+              <ul>
+                <li>Number-One</li>
+                <ol type="1">
+                  <li>number-one-one</li>
+                  <li>number-one-two</li>
+                </ol>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <ol start="100">
+          <li> -1</li>
+          <li> -2</li>
+          <li> -3</li>
+        </ol>
+      </div>
+      <div>
+      <!--Açıklama Listeleri-->
+      <dl>
+        <dt>Coffee</dt>
+        <dd>-black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>-white cold drink</dd>
+      </dl>
+      <dt>terim</dt>
+      <dd>terim açıklaması</dd>
+
+      <p style="border-radius: 0px; border:2px solid black; padding: 8px;">My brother has <span style="color: blue; font-weight: bold;">blue</span>
+        eyes and my father has <span style="color: darkolivegreen; font-weight: bold;">dark green</span> eyes.</p>
+      <p>2. Paragraf</p>
+
+    </div>
+
+      <!--İMG-MAP Computer-->
+      <div>
+        <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap">
+        <map name="workmap">
+          <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html" target="_blank">
+          <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html" target="_blank">
+          <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html" target="_blank">
+        </map>
+      </div>
+
+      <!--İMG MAP Javascript onClick()-->
+      <div id="IMG">
+        <h1 style="font-size: 20px; text-align: center; color: steelblue; border: 2px solid blueviolet;">Javascript coffee clicked<br>↓</h1>
+        <img src="images/workplace.jpg" alt="workplace" usemap="#workmap2">
+        <map name="workmap2">
+          <area shape="circle" coords="337,300,44" href="#IMG" onclick="myFunction()">
+        </map>
+        <script>
+          function myFunction(){
+            alert("You clicked the coffee cup!");
+          }
+        </script>
+      </div>
+
+      <!--FOOD 4K
+      <div style="text-align: center;">
+        <p id="F1" style="color: rgb(31, 26, 27); font-size: 30px; font-family: verdana; border: 2px solid black; text-align: center;">Her alana farklı tıklayın<br>↓</p>
+        <img src="images/foods.png" usemap="#food">
+        <map name="food">
+          <area shape="circle" coords="124,124,30" href="#F1">
+          <area shape="circle" coords="78,165,35" href="#F1">
+          <area shape="circle" coords="64,219,30" href="#F1">
+          <area shape="poly" coords="112,216,144,176,219,40,227,121,289,68,283,99,364,76,364,59,378,81,408,80,386,96,387,106,376,121,373,164,333,155,310,211,268,222,277,203,241,185,224,219,198,208,187,289,160,272,121,256" href="#F1">
+        </map>
+        Javascript Kodları: nesneye tıklandığında çalışacak script
+        <script>
+          function myFasulye(url,title){
+              var w=1090;
+              var h=600;
+              /*sayfa ortala*/
+              var dualScreenLeft = window.screenLeft !=undefined ? window.screenLeft : screen.left;
+              var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+              var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+              var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ?document.documentElement.clientHeight : screen.height;
+              var left = ((width/2)-(w/2)) + dualScreenLeft;
+              var top = ((height/2)-(h/2) + dualScreenTop);
+              /*-----------------------*/
+              window.open(url,title,'scrollbars=yes, width='+ w +', height='+ h +', top='+top +', left=' + left);//pencereyi ac
+          }
+        </script>
+      </div>-->
+
+      <!--İMG-MAP Frenchfood-->
+      <div>
+        <img src="images/frenchfood.jpg" alt="French Food" usemap="#french">
+        <map name="french">
+          <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="frenchfood.html" target="_blank">
+        </map>
+      </div>
+
+      <!--GIF Float Text Right-Left-->
+      <div>
+        <p style="height: 42px; text-align: right;"><img src="images/smiley.gif" alt="Smiley face" style="float:right; width: 42px; width: 42px;">
+          The image will float to the right of the text.
+        </p>
+        <p style="height: 42px;"><img src="images/Smiley.gif" alt="Smiley face" style="float: left; width: 42px; width: 42px;">
+          The image will float to the left of the text.
+        </p>
+      </div>
+
+      <!--Her ekran boyutları için farklı resimler ekleme--> 
+      <div style="background-color: #4286f417;">
+        <h1 style="border: none; font-size: 20px;text-align: center;">Ekran boyutuna göre resim değişir.</h1>
+      </div>
+
+      <div>
+      <picture style="margin: 20px">
+        <source media="(min-width: 650px)" srcset="images/img_food.jpg">
+        <source media="(min-width: 465px)" srcset="images/img_car.jpg">
+        <img src="images/img_girl.jpg" alt="img_girl" style="width: auto;"><!--hiçbir şey görüntülenmezse burayı çalıştır-->
+      </picture>
+    </div>
+
+      <div style="background-color: #f8f8f8;">
+        <p style=" font-size: 20px;"><a href="https://www.w3schools.com" target="_self"> Link_one_1 </a></p>
+        <p style=" font-size: 20px;"><a href="https://www.w3schools.com" target="_blank"> Link_two_2 </a></p>
+        <p style=" font-size: 20px;"><a href="https://www.w3schools.com" target="_parent"> Link_three_3 </a></p>
+        <p style=" font-size: 20px;"><a href="https://www.w3schools.com" target="_top"> Link_four_4 </a></p>
+        <p style=" font-size: 20px;"><a href="html/page.css" target="_blank">css doyasına git</a></p>
+      </div>
+
+      <!--W3SCHOOLS-->
+      <div style="margin: 30px; padding: 10px; border: 7px solid black; max-width: 100%;">
+        <a href="https://www.w3schools.com" target="_blank"><img src="images/w3schools.jpg" width="250px" height="250px"></a>
+      </div>
+      
+      <!--ŞİRİNLER-->
+      <div style="margin: 30px; padding: 10px; border: 2px solid steelblue; max-width:100%;">
+        <a><img src="images/smurf.gif" max-width="100%" max-height="100%" alt="ŞİRİNLER"></a>
+      </div>
+
+      <!--MAIL-to-->
+      <div style="padding: 10px; border: 3px solid rgba(197, 92, 197, 0.397); text-align: center; max-width: 100%;">
+        <a href="mailto:bim2@tstsan.com"><img src="images/mail.jpg" style="max-width:100%; max-height:100%;"></a><br>
+        <a href="mailto:bim2@tstsan.com" style="font-size: 30px;">mailto: bim2@tstsan.com</a><br>
+        <a href="/altklasor/page.css" target="_blank">a</a>
+      </div>
+
+      <h1 style="color: blue;">A Blue Heading</h1>
+      <p style="color: red;">B red paragraph.</p>
+
+      <p style="background-color: rgb(255, 99, 71); font-size: 300%x;">My first paragraph.</p>
+      <p style="color: brown; background-color: cadetblue; font-size: 30px;">This is anathor paragraph.</p>
+      
+      <h1 style="color: blue; border: 7px solid tomato;">h1 tagı</h1>
+      <h2 style="font-family: Verdana; text-align: right; border: 5px solid black;">h2 tagı</h2>
+      <h3 style="font-family: 'Courier New'; border: 5px solid seagreen;">h3 tagı</h3>
+      <h4 style="text-align: right; border: 5px solid rgb(143, 41, 168);">h4 tagı</h4>
+      <h5 style="border: 5px solid tan;">h5 tagı</h5>
+      <h6 style="text-align: center; border: 5px solid rgb(218, 23, 23);">h6 tagı</h6>
+
+      <a href="https://w3schools.com" >This is a link</a>
+      <img src="images/w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+      <img src="https://images.hepsiburada.net/assets/sfstatic/Content/images/favicon-new.ico" alt="img resim" width="%100" height="%100">
+      
+      <p>Paragraf tagıdır</p>
+      <h1>h1 tagı en büyük başlık fontu</h1>
+
+      <p>This is a <br>Paragraph with a line break.</p>
+
+      <a href="/btc.jfif">visit w3schools.com</a><br>
+      <img src="images/btc.jfif" width="100%" height="100%" title="btc grafiği">
+      <br>
+      <img src="images/btc.jfsif" width="100%" height="100%" alt="resim görüntelenmediğinde">
+
+      <p style="color: blueviolet;">This is a blueviolet paragraph</p>
+      <p title="I'm a tooltip">Mouse ile üzerine gel</p>
+      <a href="https://www.w3schools.com/html/" style="font-size:20px; color:rgb(219, 150, 47)">Visit our HTML tutorial</a>
+      <p title='John "ShotGun" Nelson'>tek tırnak içinde çift tırnak</p>
+      <p title="John 'ShotGun' Nelson">çift tırnak içinde tek tırnak</p>
+
+      <hr>
+      <h1 style="font-size: 300%;">Heading 1</h1>
+      <hr>
+      <h2 style="font-size: 200%;">Heading 2</h2>
+      <hr>
+      <h3 style="font-size: 60px;">Heading 3</h3>
+      <hr>
+      <h4 style="font-size: 40px;">Heading 4</h4>
+      <hr>
+      <h5 style="font-size: 20px;">Heading 5</h5>
+      <hr>
+      <h6 style="font-size: 10px;">Heading 6</h6>
+      <hr>
+
+      <p style="color: DodgerBlue;">
+          My Bonnie lies over the ocean. 
+          My Bonnie lies over the sea.
+          My Bonnie lies over the ocean.
+          Oh, bring back my Bonnie to me.
+      </p>
+
+      <pre style="color: MediumSeaGreen; width: 100%;">
+          My Bonnie lies over the ocean.
+          My Bonnie lies over the sea.
+          My Bonnie lies over the ocean.
+          Oh, bring back my Bonnie to me.
+      </pre>
+
+      <p style="color: red; font-size: 20px;">I am Red</p>
+      <p style="color: blue; font-size: 30px;">I am Blue</p>
+      <p style="font-size: 50px;">I am Big</p>
+
+      <b>b bold This text is bold</b><br>
+      <strong>strong This text is important!</strong><br>
+      <i>i This text is italic</i><br>
+      <em>em This text is emphasized</em><br>
+      <small>This is some smaller text.</small><br>
+      <p>Do not forget to buy <mark>milk vurgulanan yazı (mark)</mark> today.</p>
+      <del>Silinmiş yazı (del)</del>
+      <p>My favorite color is <del>blue</del> <ins>red ins</ins></p>
+      <p>Benim favori rengim <del>mavi</del> <ins>kırmızıdır ins</ins></p>
+      <p>This is <sub>subscripted</sub> text.</p>
+      <p>H<sub>2</sub>O</p>
+      <p>İnşaat alanı 2500 m<sup>2</sup></p>
+
+      <p>(blockquote alıntı tagı)Here is a quote from WWF's website:</p>
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years,<mark>WWF</mark> has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        1.2 million members in the United States and
+        close to 5 million globally.
+      </blockquote>
+
+      <p>(q tagı kısa alıntı)
+          <q>Build a future where people live in harmony with nature.</q>
+      </p>
+
+      <p>The <abbr title="World Healt Organization">WHO</abbr> was sounden in 1948.</p>
+      <p><abbr title="Word Wide Web">www</abbr></p>
+        abbr tagından sonra satır otomatik eklenir.
+      <address>Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+      </address>
+
+      <p><cite>{cite tagı} (yaratıcı bir çalışmanın başlığını tanımlar. italic yazar) The Scream</cite>by Edvard Munch. Painted in 1983.</p>
+
+        Metin yönünü ters çevirmek.<br>
+      <bdo dir="rtl">This text will be written from rigth to left</bdo><br>
+      <bdo dir="rtl">bu terste bir iş var [(ıgat odb)]</bdo>
+
+      
+      <div style="height: 500px;">
+        <h1 id="C1"> Chapter 1<a href="#C11">Chapter 11</a></h1>
+      </div>
+
+      <div style="height: 500px;">
+        <h1 id="C2">Chapter 2<a href="#C22">Chapter 22</a></h1>
+      </div>
+      
+      <div style="height: 500px;">
+        <h1 id="C3">Chapter 3<a href="#C33">Chapter 33</a></h1>
+      </div>
+      
+      <div style="height: 500px;">
+        <h1 id="C4">Chapter 4<a href="#C44">Chapter 44</a></h1>
+      </div>
+      
+      <div style="height: 500px;">
+        <h1 id="C5">Chapter 5<a href="#C55">Chapter 55</a></h1>
+      </div>
+
+      <div>
+        <h1 id="C6">Chapter 6<a href="html_demo.html#C4" target="_blank">Chapter 66(html_demo Chapter 4)</a></h1>
+      </div>
+      
+      <footer>
+        <p>footer</p>
+        <p>Author: Adem Bakis</p>
+        <p><a href="href">Home</a></p>
+      </footer>
+
+    </section>
+  </body>
+</html>

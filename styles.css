@@ -1,0 +1,548 @@
+/*Css created by @adembakis*/
+body{
+    /*background-image: url(images/background.png);*/
+    background-color: rgb(229,229,229);
+    background-repeat: no-repeat; /* tekrarlamasın*/
+    background-attachment: fixed; /*tüm öğenin her zaman kapsandığından emin olmak için*/
+    background-size: 100% 100%; /*arka plan görüntüsünün tüm öğeye sığacak şekilde uzamasını istiyorsak*/
+    display: flexbox;
+    width: -webkit-fill-available;
+    font-family: system-ui;
+    font-size: 25px;
+}
+div{
+    display:inherit;
+}
+#h1_w3school{
+    text-align: center;
+    color:rgba(0, 128, 0, 0.7);
+    background-color:rgba(0, 255, 0, 0.1);
+    border: 3px solid rgba(0, 128, 0, 0.1);
+    font-size: 150%;
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px black;
+}
+#nav_style{
+    background-color: white;
+    box-shadow: 0px 0px 30px white;
+    font-size: 20px;
+    font-family: Tahoma;
+    border: 2px dotted white;
+    width: 90vw;
+    text-align: center;
+    margin: 20px;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+#nav_style:hover{
+    font-weight: bold;
+    box-shadow: 0px 0px 30px 3px rgba(0, 128, 0, 0.3);
+    transition-duration: 100ms;
+    font-size: 25px;
+}
+.sag_yan_aside{
+    float: right;
+    border: 1px dashed thistle;
+    border-radius: 20px;
+    color: blue;
+    font-family: Tahoma;
+    font-size: 20px;
+    margin: 30px;
+    width: 15%;
+    padding: 20px;
+    padding-left: 5vw;
+    background-color: lightgray;
+}
+#google{
+    clear: right;
+    background-color: snow;
+    border: 2px solid thistle;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+}
+#googleAramaKutusu{
+    width: 70%;
+    box-shadow: 1px 1px 10px grey;
+    box-sizing: border-box;
+    border: 2px solid thistle;
+    border-radius: 18px;
+    font-size: 16px;
+    padding: 8px 20px 8px 40px;
+}
+#ic_bolum{
+    background-color: white;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    padding: 30px;
+    max-width: 100%;
+}
+#java_bolum{
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 10px black;
+}
+#spotify{
+    margin: 0 auto 0 auto;
+    width: auto;
+    height: auto;
+    border: 2px solid green;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px green;
+}
+#iframe_spotify{
+    width: 100%;
+    height: 400px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#forms{
+    text-align: left;
+    border: 0.5px dotted rgb(104, 5, 5);
+    box-shadow: 0px 0px 10px 1px black;
+    transition-duration: 20ms;
+    border-radius: 15px;
+    width: 40vw;
+    margin: 0 auto 0 auto;
+    padding: 25px;
+    padding-left: 90px;
+    padding-right: 90px;
+    color: black;
+    font-size: 20px;
+    font-family: system-ui;
+    background-color: rgba(204, 223, 228, 0.2);
+}
+#forms:hover{
+    box-shadow: 0px 0px 20px 5px black;
+    transition-duration: 100ms;
+}
+.fieldset_kucuk_form{
+    border: 2px dotted rgba(8, 8, 8, 0.705);
+    box-shadow: 0px 0px 10px 3px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: rgb(138,182,239,0.4);
+    text-align: center;
+}
+.legend_baslik{
+    background-color: rgba(146, 202, 219, 0.7);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0);
+    font-family: system-ui;
+    text-align: center;
+    border: 1px double white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    max-width: 100%;
+    color: rgb(0, 0, 0);
+    transition-duration: 100ms;
+}
+.legend_baslik:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 100ms;
+}
+#text_area{
+    background-color: rgba(216, 191, 216, 0.2);
+    border: 2px dotted thistle;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    height: 200px;
+    font-size: 16px;
+    font-family: Verdana;
+    resize: none;
+    overflow: auto;
+}
+#text_area::selection{
+    background-color: rgba(0, 128, 0, 0.4);
+}
+#text_area:focus{
+    background-color: rgba(160, 221, 216, 0.281);
+    border: 2px dotted thistle;
+    border-radius: 10px;
+}
+#auto_focus{
+    width: 90%;
+    height: 30px;
+    border: 5px dotted thistle;
+    border-radius: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    color: black;
+    font-family: system-ui;
+    font-size: 20px;
+    background-color: rgba(240, 96, 71, 0.3);
+    box-shadow: 0px 0px 10px black;
+    font-weight: bold;
+}
+#email{
+    font-size: 14px;
+    border: 1px dotted rgba(168, 236, 245, 0.582);
+    border-radius: 10px;
+    width: 70%;
+    text-align: left;
+    padding: 5px;
+    padding-left: 15px;
+}
+#email::selection{
+    background-color: #666;
+}
+#email:focus{
+    background-color: rgba(216, 191, 216, 0.3);
+    transition-duration: 500ms;
+    box-shadow: 0px 0px 10px black;
+}
+.radio_butonlari{
+    cursor: pointer;
+}
+#cars{
+    width: 99%;
+    border: 5px solid lightblue;
+    border-radius: 12px;
+    padding: 5px;
+}
+#bolum_section{
+    margin: 5px;
+    padding: 10px;
+    border: 5px dashed thistle;
+    border-radius: 10px;
+}
+#icons{
+    background-color:snow;
+    margin: 10px; 
+    padding: 10px;
+    border: 3px solid thistle;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#icons:hover{
+    box-shadow: 3px 3px 30px darkgray;
+}
+.resim{
+    margin: 0 auto 0 auto;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border: 2px dashed grey;
+    border-radius: 10px;
+}
+.resim:hover{
+    box-shadow: 3px 3px 20px #000;
+    border: none;
+    transform: scale(1.3);
+}
+#jsDiv{
+    border: 2px solid rgb(103,61,230);
+    background-color: rgb(235,228,255);
+    border-radius: 10px;
+    padding: 11px;
+    margin: 10px; 
+    padding: 10px;
+}
+#jsDiv:hover{
+    box-shadow: 3px 3px 20px #000;
+    -moz-box-shadow: 3px 3px 20px #000;
+    -webkit-box-shadow: 3px 3px 20px #000;
+}
+#jsBaslik{
+    font-family: Verdana;
+    font-size: 20px;
+    color: rgb(47,28,106);
+    border: none;
+    margin: 20px;
+    font-weight: bold;
+}
+#jsAciklama{
+    color: rgb(97,95,106);
+    font-family: Verdana;
+    font-size: 17px;
+    padding: 20px;
+    border: none;
+}
+.chapter_bg{
+    background-image: url(images/blur_box.png);
+    filter: blur(100px);
+    height: 100%;
+    margin: 50px;
+}
+#chapter_text{
+    margin: 0 auto 0 auto;  /*ekranın ortasına alır*/
+    width: auto;
+    box-shadow: 1px 1px 15px black;
+    display: table;
+    padding: 20px; 
+    border-radius: 15px;
+}
+#chapter_text:hover{
+    box-shadow: 1px 1px 30px black;
+}
+.basliklar{
+    width: 50px;
+    height: 50px;
+    text-align: left;
+    margin: 15px;
+    padding: 10px;
+    color: black;
+    font-family: Lucida Sans Unicode;
+    font-size: 18px;
+}
+#butonum{
+    cursor: pointer;
+    width: 270px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    border: 1px dotted blue;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: rgb(138,182,239,0.8);
+}
+#butonum:hover{
+    background-color: rgb(138,182,239,0.8);
+}
+#butonum:active{
+    background-color: rgb(138,182,239,1);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    box-shadow: 0 3px #999;
+}
+#makaleler{
+    border-radius: 15px;
+    margin: 20px;
+    padding: 30px;
+    border: 2px dashed thistle;
+}
+#hamburger_ceper{
+    border: 4px dotted thistle;
+    width: 60%;
+    border-radius: 18px;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+#container_dis{
+    border-radius: 15px;
+    background-color: #f1f1f1;
+}
+.H_container{
+    padding: 2px 16px;
+}
+#promo{
+    background: rgba(128, 128, 128, 0.6);
+    padding: 4px;
+    border-radius: 4px;
+}
+#expire{
+    color: red;
+    font-weight: bold;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS';
+}
+#hesapDiv{
+    margin: 0 auto 0 auto; 
+    display: table;
+    width: 300px;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    border: 5px solid thistle;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+#caption_baslik{
+    border: 2px dashed thistle;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+.bolum{
+    border: 2px solid grey;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 3px 3px 10px black;
+}
+
+#pid{
+    border: none;
+}
+#myDiv1{
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+#myDiv1:hover{
+    font-weight: bold;
+}
+#myDiv2{
+    background-color: blanchedalmond;
+    text-align: center;
+    font-size: 50px;
+}
+#myDiv2:hover{
+    font-weight: bold;
+}
+#myDiv3{
+    background-color: salmon;
+    text-align: center;
+    font-size: 70px;
+}
+#myDiv3:hover{
+    font-weight: bold;
+}
+.city{
+    background-color: white;
+    color: white;
+    border: 2px solid black;
+    border-radius:10px;
+    margin: 40px;
+    padding: 20px;
+    text-align: center ;
+}
+.main{
+    background-color: rgba(0, 0, 255, 0.3);
+    font-size: 30px;
+}
+.city:hover{
+    color: black;
+    background-color: white;
+}
+#countryContact{
+    background-color: #4286f41a;
+    width: -webkit-fill-available;
+}
+.country{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+.country:hover{
+    color: black;
+    background-color: cornflowerblue;
+}
+.note{
+    color: black;
+    font-size: 25px;
+}
+.note:hover{
+    color: blueviolet;
+    font-size: 20px;
+    background-color: rgba(95, 158, 160, 0.3);
+    font-style: italic;
+}
+img{
+    border-radius: 7px;
+}
+p{
+    color: black;
+    font-family: Lucida Sans;
+    font-size: 100%;/*kenarlık*/
+    padding: 1px;/*metin ve kenarlık arasında bir dolgu (boşluk) tanımlar.*/
+}
+/*Ziyaret edilmeyen bir bağlantı*/
+a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+/*Ziyaret edilen bir bağlantı*/
+a:visited{
+    color: black;
+    background-color: black;
+    text-decoration: none;
+}
+/*Üzerine gelince*/
+a:hover{
+    color: black;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*keyDown-olunca üzerine bastın ve çekmedin henüz -> olacak görüntüsü*/
+a:active{
+    color: cornflowerblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/*TABLE*/
+table{
+    margin: 10px;
+    width: -webkit-fill-available;
+    border: 1px solid black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: black;
+    border-spacing: 5px;/*standart 2 px ile gelir -- border boşluğu*/
+}
+th,td,tr{
+    width: -webkit-fill-available;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;/*çift kenarlık önlemek için*/
+    border-radius: 5px;
+    border-style: dashed;
+}
+/* even (1,3,5,7) odd(2,4,6,8)
+tr:nth-child(even),th:nth-child(even),td:nth-child(odd){
+    background-color: rgba(150, 212, 212, 0.4);
+}
+*/
+caption{
+    font-size: 25px;
+    text-align: center;
+}
+td:hover, th:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-style: double;
+    /*font-weight: bold;*/
+}
+.tdButon{
+    background-color: rgb(218,220,224);
+    width: 5px;
+    height: 20px;
+    font-size: 20px;
+}
+#tdSonuc{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    height: 20px;
+}
+.trButon{
+    height: 100px;
+}
