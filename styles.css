@@ -123,21 +123,21 @@ div{
     color: black;
     font-size: 20px;
     font-family: system-ui;
-    background-color: rgba(204, 223, 228, 0.2);
+    background-color: rgba(35, 154, 201, 0.4);
 }
 #forms:hover{
     box-shadow: 0px 0px 20px 5px black;
     transition-duration: 100ms;
 }
 .fieldset_kucuk_form{
-    border: 2px dotted rgba(8, 8, 8, 0.705);
+    border: 3px dotted white;
     box-shadow: 0px 0px 10px 3px black;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 15px;
     padding: 25px;
-    background-color: rgb(138,182,239,0.4);
-    text-align: center;
+    background-color: rgb(235, 232, 217);
+    padding: 20px;
 }
 .legend_baslik{
     background-color: rgba(146, 202, 219, 0.7);
@@ -189,7 +189,7 @@ div{
     color: black;
     font-family: system-ui;
     font-size: 20px;
-    background-color: rgba(240, 96, 71, 0.3);
+    background-color: rgba(200, 218, 38, 0.616);
     box-shadow: 0px 0px 10px black;
     font-weight: bold;
 }

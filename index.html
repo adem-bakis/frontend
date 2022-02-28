@@ -74,7 +74,7 @@ GITHUB
 
     <!--FORM-->
     <section id="forms">
-      <form action="/bootstrap.html" target="_blank" method="get" autocomplete="on" validate id="form1">  
+      <form action="/bootstrap.html" target="_blank" method="get" autocomplete="on" id="form1">  
         <!-- 1 -->
         <fieldset class="fieldset_kucuk_form">
           <legend class="legend_baslik">1. Alan</legend>
@@ -182,7 +182,7 @@ GITHUB
         <input type="email" id="email" name="email"><hr>
         <label for="file">File</label>
         <input type="file" id="file" name="file"><hr>
-        <!--saklı oalrak formdan ilgili dosyaya gider-->
+        <!--saklı olarak formdan ilgili dosyaya gider-->
         <input type="hidden" id="gizli" name="gizli" value="Gizli - Hidden">
         <label for="ay">Ay</label>
         <input type="month" id="month" name="month"><hr>
@@ -212,8 +212,8 @@ GITHUB
         <label for="nosalt">Normal değeri <ins>düzenlenip</ins> gönderilen form verileri</label>
         <input type="text" id="nosalt" name="nosalt" value="Doe" size="20" maxlength="15"><hr>
 
-        <label for="disabled">(disabled) değeri <mark>gönderilmeyen</mark> form verileri (sadece ekrana bastırır)</label>
-        <input type="text" id="disabled" name="disabled" value="Joe" disabled><hr>
+        <label for="disabled">( <mark>disabled</mark> ) değeri <mark>gönderilmeyen</mark> form verileri (<mark> sadece ekrana bastırır </mark>)</label>
+        <input type="text" id="disabled" name="disabled" value="Joe_disabled" disabled><hr>
 
         <label for="files">Select files:</label>
         <input type="file" id="files" name="files" multiple><hr>
@@ -225,7 +225,7 @@ GITHUB
         <input type="text" id="required" name="required" required pattern="[0-9]{3}" title="3 haneli rakam giriniz sadece"><hr>
 
         <label for="auto_focus">Sayfa yüklendiğinde otomatik odaklanan buraya gelir <br><em>(--- autofocus niteliği eklendiği için ---)</em><br></label>
-        <input type="text" id="auto_focus" name="auto_focus" autofocus placeholder="Değer girmeden dewam etmeyiniz" required autocomplete="off">
+        <input type="text" id="auto_focus" name="auto_focus" autofocus placeholder="Değer girmeden devam etmeyiniz" required autocomplete="off">
         </fieldset>
       
         <!--FORM RESET and SUBMIT-->
@@ -233,22 +233,26 @@ GITHUB
           <legend class="legend_baslik">SON</legend>
           <input type="reset" value="sıfırla" style="font-size: 20px;">
           <input type="submit" value="gönder" style="font-size: 20px;">
+          <input type="submit" formmethod="post" value="Post olarak Gönder" style="font-size: 20px;"><!--POST-->
+          <input type="submit" formtarget="_blank" value="Gönder ve yeni pencerede aç" style="font-size: 20px;">
         </fieldset>
         
         <fieldset class="fieldset_kucuk_form">
           <legend class="legend_baslik">formaction</legend>
           <label for="fn">Ad</label>
           <input type="text" required placeholder="isim"><hr>
-          <input type="button" value="formaction /bootstrap2.html">
+          <input type="submit" formaction="/bootstrap2.html" value="formaction ile /bootstrap2.html sayfasına gönder">
         </fieldset>
       </form>
 
       <!--input değeri formun dışında değer ama FORMA BAĞLI-->
-      <input type="text" id="text1" name="T_E_X_T_1" form="form1">
+      <input type="text" id="text1" size="10" placeholder="size-10" name="T_E_X_T_1" required form="form1">
+      <input type="submit" formenctype="multipart/form-data" value="dosyayı Multipart/form-data kodlayarak gönder" form="form1">
+      <input type="submit" formnovalidate value="noValidation (kontrolsuz) olarak gönder" form="form1">
 
     </section><br>
 
-    <input type="text" id="text2" name="T_E_X_T_2" form="form1">
+    <input type="text" id="text2" required name="T_E_X_T_2" form="form1">
 
     <section id="bolum_section">
       <div id="icons">
