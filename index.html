@@ -225,7 +225,7 @@ GITHUB
         <input type="text" id="required" name="required" required pattern="[0-9]{3}" title="3 haneli rakam giriniz sadece"><hr>
 
         <label for="auto_focus">Sayfa yüklendiğinde otomatik odaklanan buraya gelir <br><em>(--- autofocus niteliği eklendiği için ---)</em><br></label>
-        <input type="text" id="auto_focus" name="auto_focus" autofocus placeholder="Değer girmeden devam etmeyiniz" required autocomplete="off">
+        <input type="text" id="auto_focus" name="auto_focus" placeholder="Değer girmeden devam etmeyiniz" required autocomplete="off">
         </fieldset>
       
         <!--FORM RESET and SUBMIT-->
@@ -250,9 +250,27 @@ GITHUB
       <input type="submit" formenctype="multipart/form-data" value="dosyayı Multipart/form-data kodlayarak gönder" form="form1">
       <input type="submit" formnovalidate value="noValidation (kontrolsüz) olarak gönder" form="form1">
 
-    </section><br>
+    </section><hr id="ara_cizgi">
 
-    <input type="text" id="text2" required name="T_E_X_T_2" form="form1">
+    <section id="kanvas">
+
+      <label>Kanvas Nedir?</label><hr>
+      <input type="text" placeholder="Canvas" autofocus style="text-align: center;">
+      <label>HTML 'canvas' öğesi, JavaScript aracılığıyla anında grafik çizmek için kullanılır.</label><br>
+      
+
+      <canvas id="myCanvas"></canvas>
+      <script>
+        var c=document.getElementById("myCanvas");
+        var ctx= c.getContext("2d");
+        ctx.moveTo(80,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+      </script>
+
+    </section>
+
+    
 
     <section id="bolum_section">
       <div id="icons">
