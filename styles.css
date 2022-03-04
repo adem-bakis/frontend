@@ -109,7 +109,7 @@ div{
     border: 1px solid white;
     border-radius: 10px;
 }
-#forms{
+.forms{
     text-align: left;
     border: 0.5px dotted rgb(104, 5, 5);
     box-shadow: 0px 0px 10px 1px black;
@@ -178,7 +178,8 @@ div{
     border-radius: 10px;
 }
 #auto_focus{
-    width: 90%;
+    margin: 0 auto 0 auto;
+    width: 20vw;
     height: 30px;
     border: 5px dotted thistle;
     border-radius: 15px;
@@ -193,10 +194,16 @@ div{
     box-shadow: 0px 0px 10px black;
     font-weight: bold;
 }
-#ara_cizgi{
+.ara_cizgi{
     width: 48vw;
 }
-#kanvas{
+#myCanvas{
+    width: 300px;
+    height: 150px;
+    border: 2px dotted black;
+    border-radius: 15px;
+}
+#html_SVG{
     text-align: left;
     border: 0.5px dotted rgb(104, 5, 5);
     box-shadow: 0px 0px 10px 1px black;
@@ -212,13 +219,22 @@ div{
     font-family: system-ui;
     background-color: rgba(35, 154, 201, 0.4);
 }
-#myCanvas{
-    clear: right;
-    width: 200px;
-    height: 200px;
+.myVideo{
+    width: auto;
+    height: auto;
+    margin: 1px;
+    padding: 1px;
     border: 2px dotted white;
-    border-radius: 10px;
-    margin: 20px;
+    border-radius: 15px;
+}
+.yan-yana{
+    border: 2px dotted black;
+    border-radius: 15px;
+    margin: 1px;
+    padding: 10px;
+    width: 30%;
+    height: 30%;
+    float: right;
 }
 #email{
     font-size: 14px;
@@ -247,6 +263,7 @@ div{
     padding: 5px;
 }
 #bolum_section{
+    clear: right;
     margin: 5px;
     padding: 10px;
     border: 5px dashed thistle;

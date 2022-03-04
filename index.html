@@ -73,7 +73,7 @@ GITHUB
     -->
 
     <!--FORM-->
-    <section id="forms">
+    <section class="forms">
       <form action="/bootstrap.html" target="_blank" method="get" autocomplete="on" id="form1">  
         <!-- 1 -->
         <fieldset class="fieldset_kucuk_form">
@@ -250,25 +250,266 @@ GITHUB
       <input type="submit" formenctype="multipart/form-data" value="dosyayı Multipart/form-data kodlayarak gönder" form="form1">
       <input type="submit" formnovalidate value="noValidation (kontrolsüz) olarak gönder" form="form1">
 
-    </section><hr id="ara_cizgi">
+    </section>
+        <hr class="ara_cizgi">
+    <!-- CANVAS -->
+    <section class="forms">
 
-    <section id="kanvas">
-
-      <label>Kanvas Nedir?</label><hr>
-      <input type="text" placeholder="Canvas" autofocus style="text-align: center;">
+      <label style="text-align: center; font-size: 30px; font-weight: bold;">Kanvas Nedir?</label><hr>
+      
       <label>HTML 'canvas' öğesi, JavaScript aracılığıyla anında grafik çizmek için kullanılır.</label><br>
       
-
-      <canvas id="myCanvas"></canvas>
+      <!--CANVAS - 1 - -->
+      <canvas id="myCanvas" style="width: 200; height: 100; border: 2px dotted black; border-radius: 15px;"></canvas>
       <script>
-        var c=document.getElementById("myCanvas");
+        var c=document.getElementById("myCanvas");;
+
+        //  İlk çaprazın \ çizgisi için
         var ctx= c.getContext("2d");
-        ctx.moveTo(80,0);
-        ctx.lineTo(200,100);
+        ctx.moveTo(5,5);
+        ctx.lineTo(295,145);
+        ctx.stroke();
+
+        //  İlk çaprazın / ikinici çizgisi için
+        var cty = c.getContext("2d");
+        cty.moveTo(295,5);
+        cty.lineTo(5,145);
+        cty.stroke();
+       
+      </script>
+
+      <!--CANVAS - 2 - -->
+      <canvas id="myCanvas2" style="width: 200; height: 100; border: 2px dotted black; border-radius: 15px;"></canvas>
+      <script>
+        var c=document.getElementById("myCanvas2");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
         ctx.stroke();
       </script>
 
+      <!--CANVAS - 3 - -->
+      <canvas id="myCanvas3" style="width: 200; height: 100; border: 2px dotted black; border-radius: 15px;"></canvas>
+      <script>
+        var c = document.getElementById("myCanvas3");
+        var ctx = c.getContext("2d");
+        ctx.font = "50px Arial";
+        ctx.fillText("Hello World",10,50);
+      </script>
+
+      <!--CANVAS - 4 - -->
+      <canvas id="myCanvas4" style="width: 200; height: 100; border: 2px dotted black; border-radius: 15px;"></canvas>
+      <script>
+        var c = document.getElementById("myCanvas4");
+        var ctx = c.getContext("2d");
+        ctx.font = "50px Arial";
+        ctx.strokeText("Hello World",10,50);
+      </script>
+
+      <!--CANVAS - 5 - -->
+      <canvas id="myCanvas5" style="width: 200; height: 100; border: 2px dotted black; border-radius: 15px;"></canvas>
+      <script>
+        var c = document.getElementById("myCanvas5");
+        var ctx = c.getContext("2d");
+
+        //Create gradient
+        var grd = ctx.createLinearGradient(0,0,250,0);
+        grd.addColorStop(0, "orange");
+        grd.addColorStop(1, "white");
+
+        //Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(0,0,300,150);
+      </script>
+
+      <!--CANVAS - 6 - -->
+      <canvas id="myCanvas6" style="width: 200; height: 100; border: 2px dotted black; border-radius: 15px;"></canvas>
+      <script>
+        var c =document.getElementById("myCanvas6");
+        var ctx = c.getContext("2d");
+
+        //Create gradient
+        var grd = ctx.createRadialGradient(150,75,10,150,75,70);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+
+        //Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(0,0,300,150);
+      </script>
+
+      <!--CANVAS - RESİM - ÇİZ - -->
+      <p>Image to use</p>
+      <img id="scream" src="images/mac.jpg" alt="The Scream" width="300" height="300">
+
+      <button onclick="myCanvas7()">Try it</button>
+      <canvas id="myCanvas7" style="width: 300px; height: 300px; border: 2px dotted black; border-radius: 15px;">
+        Your browser does not support the HTML canvas tag.
+      </canvas>
+
+      <script>
+        function myCanvas7(){
+          var c = document.getElementById("myCanvas7");
+          var ctx = c.getContext("2d");
+          var img = document.getElementById("scream");
+          ctx.drawImage(img,0,0,300,150);
+        }
+      </script>
+
     </section>
+        <hr class="ara_cizgi">
+    <!-- SVG -->
+    <section class="forms">
+
+      <p style="font-weight: bold; font-size: 30px; font-family: system-ui;">SVG</p>
+      <p>Ölçeklenebilir Vektör Grafikleri anlamına gelir</p>
+      <p>Web için grafikleri tanımlamak için kullanılır.</p>
+      <p>W3 önerisidir.</p>
+
+      <!--Çember-->
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+      </svg>
+
+      <!--Dikdörtgen-->
+      <svg width="400" height="100">
+        <rect width="400" height="100" style="fill:rgb(0,0,255); stroke-width:10; stroke:rgb(0,0,0)" />
+      </svg>
+
+      <!--Yuvarlak Dikdörtgön-->
+      <svg width="400" height="180">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5;"/>
+      </svg>
+
+      <!--Yıldız-->
+      <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime; stroke:purple; stroke-width:5;fill-rule:evenodd;"/>
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+      <!--SVG Logosu-->
+      <svg width="500" height="150">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color: #34a853; stop-opacity: 1;" />
+            <stop offset="100%" style="stop-color: #4285f4; stop-opacity: 1;"/>
+          </linearGradient>
+        </defs>
+        <ellipse  cx="100" cy=70 rx=85 ry=55 fill="url(#grad1)" />
+        <text fill="ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+        Sorry, your browser dows not support inline SVG
+      </svg>
+
+    </section>
+        <hr class="ara_cizgi">
+    <!-- VİDEO -->
+    <section class="forms">
+      <p style="font-size: 25px; font-weight: bold; font-family: system-ui;">Video</p>
+      <video class="myVideo" controls>
+        <source src="images/mov_bbb.mp4" type="video/mp4">
+        <source src="images/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+      <hr style="width: 40vw;">
+
+      <!-- JavaScript ile Video Kontrol etmek-->
+      <div style="text-align: center;">
+        <button onclick="playPasue()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button><br><br>
+      </div>
+
+      <video id="myVideo">
+        <source src="images/mov_bbb.mp4" type="video/mp4">
+        <source src="images/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+      <script>
+        var myVideo = document.getElementById("myVideo");
+
+        function playPasue(){
+          if(myVideo.paused) myVideo.play(); else myVideo.pause();
+        }
+
+        function makeBig(){
+          myVideo.width=760;
+        }
+
+        function makeSmall(){
+          myVideo.width=320;
+        }
+
+        function makeNormal(){
+          myVideo.width=420;
+        }
+
+      </script>
+      <p>Video courtesy of <a href="https://bigbuckbunny.org/" target="_blank">Big Buck Bunnny</a> </p>
+
+      <!-- MP^3-->
+      <audio controls>
+        <source src="images/geccek.ogg" type="audio/ogg">
+        <source src="images/geccek.mp3" type="audio/mp3">
+        Your browser does note support the audio element
+      </audio>
+
+    </section>
+        <hr class="ara_cizgi">
+    <section class="forms">
+     
+      <p style="font-size: 25px; font-weight: bold; font-family: system-ui;">Eklentiler</p>
+      <p>Uyarı !
+
+        Çoğu tarayıcı artık Java Uygulamalarını ve Eklentilerini desteklememektedir.<br>
+        ActiveX denetimleri artık hiçbir tarayıcıda desteklenmemektedir.<br>
+        Shockwave Flash desteği, modern tarayıcılarda da kapatılmıştır.</p><br>
+
+        <section style="border: 2px dotted black; padding: 15px; border-radius: 15px;">
+        <p>⚟ <b>object</b> ⚞<br><br>
+          Öğe tüm tarayıcılar tarafından desteklenir. <br>
+          Aşağısı 2 ayrı parça olması gerekirken tek parça halinde görüntülenmektedir.</p>
+          İçine alması gereken html nesneleri gösterir
+
+        <object>
+          <section id="bolum_section">
+            <div id="icons">
+              <img class="resim" src="images/icons/add-to-favorites.png">
+              <img class="resim" src="images/icons/add.png">
+              <img class="resim" src="images/icons/done.png">
+              <img class="resim" src="images/icons/download.png">
+              <img class="resim" src="images/icons/add-to-favorites.png">
+              <img class="resim" src="images/icons/add.png">
+              <img class="resim" src="images/icons/done.png">
+              <img class="resim" src="images/icons/download.png">
+            </div>
+      
+            <!--JavaScript Nedir ?-->
+            <div id="jsDiv">
+              <br>
+              <p id="jsBaslik">JavaScript Nedir?</p>
+                <p id="jsAciklama">JavaScript, dinamik web sayfası içeriği oluşturmak için bir betik dilidir. 
+                  Açılır menüler, hareketli grafikler ve dinamik arka plan renkleri gibi site 
+                  ziyaretçilerinin web sayfalarıyla etkileşimini geliştirmek için öğeler oluşturur.</p>
+            </div>
+          </section>
+        </object>
+      </section>
+      
+      <!--SIRALI YAN-YANA DİVLER-->
+      <input type="text" placeholder="Canvas" autofocus style="text-align: center;"><br>
+      <div class="yan-yana">
+        1
+      </div>
+      <div class="yan-yana">
+        2
+      </div>
+
+
+
+    </section><br>
 
     
 
@@ -741,7 +982,7 @@ GITHUB
       
       <!--ŞİRİNLER-->
       <div style="margin: 30px; padding: 10px; border: 2px solid steelblue; max-width:100%;">
-        <a><img src="images/smurf.gif" max-width="100%" max-height="100%" alt="ŞİRİNLER"></a>
+        <a><img src="images/smurf.gif" width="100" height="100" alt="ŞİRİNLER"></a>
       </div>
 
       <!--MAIL-to-->
